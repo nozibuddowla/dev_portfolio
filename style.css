@@ -18,29 +18,58 @@
 .text-primary {
     color: #FD6E0A;
 }
+.text-dark-1 {
+    color: #181818;
+}
 .text-dark-2 {
     color: #474747;
+}
+.text-dark-3 {
+    color: #757575;
+}
+.btn-primary, .btn-secondary {
+    font-weight: 700;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }
 .btn-primary {
     background-color: #FD6E0A;
     color: #FFFFFF;
-    padding: 18px 35px;
     border: none;
-    border-radius: 5px;
-    font-weight: 700;
-    font-size: 20px;
-    cursor: pointer;
+}
+.nav_btn_padding {
+    padding: 18px 35px 19px 36px;
+}
+.btn-secondary {
+    border: 1px solid #FD6E0A;
+    color: #FD6E0A;
+    margin-left: 30px;
+}
+.download_btn_padding {
+    padding: 19px 17px 18px;
+}
+.contact_btn_padding {
+    padding: 19px 23px 18px 24px;
 }
 
+.header {
+    background-color: #FFF8F3;
+    background-image: url("./images/developer.png"), url("./images/header_bg.png");
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+}
 nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    max-width: 1200px;
+    margin: 0 200px;
+    padding: 20px 40px;
 }
 .nav-logo {
     font-weight: 800;
     font-size: 45px;
-    color: #181818;
 }
 nav ul {
     display: flex;
@@ -53,4 +82,57 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-size: 20px;
+}
+
+/* banner style */
+.banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 38px 0 230px;
+}
+@media (max-width: 760px) {
+    .banner {
+        flex-direction: column;
+        margin: 40px;
+        text-align: center;
+    }
+}
+.banner-content {
+    max-width: 585px;
+    margin-right: 163px;
+}
+.banner-greetings {
+    font-size: 45px;
+    font-weight: 600;
+}
+.banner-title {
+    font-weight: 700;
+    font-size: 80px;
+    margin-top: 5px;
+}
+.banner-description {
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.download_icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.contact_icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+.banner-profile-pic {
+    width: 580px;
+}
+
+@media (max-width: 760px) {
+    .banner-profile-pic {
+        width: 100%;
+        max-width: 300px;
+        margin-top: 30px;
+    }
 }
